@@ -24,7 +24,7 @@ describe("Issue delete", () => {
     );
   });
 
-  it.only("Should cancel deletion process, POM method", () => {
+  it("Should cancel deletion process, POM method", () => {
     IssueModal.getIssueDetailModal("issueTitle");
     IssueModal.clickDeleteButton();
     IssueModal.cancelDeletion();
